@@ -1,0 +1,94 @@
+@import "src/styles/veriables";
+
+.container{
+  border-radius: 20px;
+  box-shadow: 0 0 13px -10px #000000;
+  width: 30%;
+  margin: 1%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.title{
+  border-radius: 20px 20px 0 0;
+  padding: 5px 10px;
+  font-size: 30px;
+  width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.body{
+  border-top: 1px solid $light-silver;
+  padding: 5px 10px;
+  font-size: 18px;
+  p {
+    padding: 0;
+    margin: 0;
+    width:100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    background:#fff;
+  }
+}
+.settings{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  img {
+    opacity: 0.5;
+    width: 3.5px;
+  }
+  &:hover img{
+    opacity: 1;
+  }
+  &:hover .menu{
+    display: block;
+  }
+}
+
+.menu{
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: $white;
+  border-radius: 10px;
+  width: 150px;
+  transform: translateY(100%);
+  box-shadow: 0 0 15px -10px #000000;
+  overflow: hidden;
+  p{
+    font-size: 16px;
+    padding: 5px;
+    border-top: 1px solid $light-silver ;
+    color: $light-blue;
+    &:hover{
+      background: rgba($black, 0.1);
+    }
+  }
+  :first-child{
+    border: none;
+  }
+}
+
+.comment{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 19px;
+  padding: 5px 10px;
+  color: $light-blue;
+}

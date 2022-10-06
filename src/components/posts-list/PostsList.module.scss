@@ -1,0 +1,18 @@
+@import "src/styles/veriables";
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add_button{
+  padding: 1%;
+  button{
+    background: $light-green;
+    border: none;
+    color: #ffffff;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 2px 10px;
+  }
+}
